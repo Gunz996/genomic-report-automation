@@ -1,0 +1,35 @@
+# Reglas de validación y umbrales de QC.
+# Se editan aquí, sin tocar el código.
+
+archivos:
+  samplesheet:
+    columnas: [sample_id, cliente, tipo_muestra, panel, fecha_recepcion]
+  qc_metrics:
+    columnas: [sample_id, total_reads, pct_q30, pct_gc, pct_duplicados, cobertura_media, pct_bases_20x]
+    numericas: [total_reads, pct_q30, pct_gc, pct_duplicados, cobertura_media, pct_bases_20x]
+  variants:
+    columnas: [sample_id, gen, cromosoma, posicion, ref, alt, hgvs_c, vaf, profundidad, clasificacion]
+    numericas: [posicion, vaf, profundidad]
+
+# Umbrales de QC por muestra.
+# fail = la muestra no se reporta; warn = se reporta con observación.
+qc:
+  total_reads:     {fail_min: 1000000, warn_min: 2000000}
+  pct_q30:         {fail_min: 75,      warn_min: 85}
+  pct_duplicados:  {fail_max: 40,      warn_max: 30}
+  cobertura_media: {fail_min: 100,     warn_min: 150}
+  pct_bases_20x:   {fail_min: 90,      warn_min: 95}
+  pct_gc:          {warn_min: 35,      warn_max: 55}
+
+variantes:
+  profundidad_min: 20
+  vaf_rango: [0, 1]
+  bases_validas: [A, C, G, T]
+  cromosomas_validos: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","X","Y","MT"]
+  clasificaciones_validas:   # ACMG/AMP
+    - Benigna
+    - Probablemente benigna
+    - VUS
+    - Probablemente patogénica
+    - Patogénica
+  clasificaciones_relevantes: [Probablemente patogénica, Patogénica]

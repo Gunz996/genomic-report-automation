@@ -1,0 +1,13 @@
+sample_id,cliente,tipo_muestra,panel,fecha_recepcion
+BS-2609-01,Cliente A,Sangre periférica,Panel Hereditario 50 genes,2026-09-10
+BS-2609-02,Cliente B,Saliva,Panel Hereditario 50 genes,2026-09-11
+BS-2609-03,Cliente C,Tejido FFPE,Panel Hereditario 50 genes,2026-09-12
+BS-2609-04,Cliente D,Sangre periférica,Panel Hereditario 50 genes,2026-09-13
+BS-2609-05,Cliente A,Saliva,Panel Hereditario 50 genes,2026-09-14
+BS-2609-06,Cliente B,Tejido FFPE,Panel Hereditario 50 genes,2026-09-15
+BS-2609-07,Cliente C,Sangre periférica,Panel Hereditario 50 genes,2026-09-16
+BS-2609-08,Cliente D,Saliva,Panel Hereditario 50 genes,2026-09-17
+BS-2609-09,Cliente A,Tejido FFPE,Panel Hereditario 50 genes,2026-09-10
+BS-2609-10,Cliente B,Sangre periférica,Panel Hereditario 50 genes,2026-09-11
+BS-2609-11,Cliente C,Saliva,Panel Hereditario 50 genes,2026-09-12
+BS-2609-12,Cliente D,Tejido FFPE,Panel Hereditario 50 genes,2026-09-13
