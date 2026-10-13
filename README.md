@@ -67,5 +67,9 @@ templates/                 plantilla .docx
 tests/                     pytest
 ```
 
+## Financiamiento
+
+Aceleradoras, fondos y créditos de nube/IA para salud y biotecnología: [`docs/financiamiento_y_aceleradoras.md`](docs/financiamiento_y_aceleradoras.md).
+
 ---
 Autor: Gonzalo Zambrano, Ingeniero en Biotecnología y Analista de Datos.
