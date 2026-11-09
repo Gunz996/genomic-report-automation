@@ -12,6 +12,8 @@ qc_metrics.csv  ─┼─► 1. Carga ─► 2. Validación ─► 3. Resumen IA
 variants.csv    ─┘      (CSV/XLSX)   (reglas YAML)     (con control)      (docxtpl)          + log de validación
 ```
 
+Diagrama de flujo detallado, con decisiones y salidas de error: [`docs/diagrama_flujo.md`](docs/diagrama_flujo.md) ([PNG](docs/diagrama_flujo.png)).
+
 1. **Carga** (`loader.py`): lee CSV o Excel y normaliza columnas y espacios.
 2. **Validación** (`validate.py`): revisa en tres niveles.
    - Estructura: columnas obligatorias y archivos vacíos. Si falla, el proceso se detiene.
