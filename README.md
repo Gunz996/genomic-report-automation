@@ -13,6 +13,7 @@ variants.csv    ─┘      (CSV/XLSX)   (reglas YAML)     (con control)      (d
 ```
 
 Diagrama de flujo detallado, con decisiones y salidas de error: [`docs/diagrama_flujo.md`](docs/diagrama_flujo.md) ([PNG](docs/diagrama_flujo.png)).
+De dónde salen los datos de entrada (FASTQ → BAM → VCF → anotación ACMG): [`docs/diagrama_bioinformatica.md`](docs/diagrama_bioinformatica.md) ([PNG](docs/diagrama_bioinformatica.png)).
 
 1. **Carga** (`loader.py`): lee CSV o Excel y normaliza columnas y espacios.
 2. **Validación** (`validate.py`): revisa en tres niveles.
